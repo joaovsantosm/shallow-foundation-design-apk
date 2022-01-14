@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fundo_background">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/lado_pilar_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="5dp"
+            android:text="@string/lado_ap_main"
+            android:textColor="@color/corPrincipal"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/caixa_pilar_a"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="0dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/corPrincipal"
+            app:backgroundTint="@color/corPrincipal" />
+
+        <TextView
+            android:id="@+id/lado_pilar_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lado_pilar_a"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="5dp"
+            android:text="@string/lado_bp_main"
+            android:textColor="@color/corPrincipal"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/caixa_pilar_b"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caixa_pilar_a"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="0dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/corPrincipal"
+            app:backgroundTint="@color/corPrincipal" />
+
+        <TextView
+            android:id="@+id/texto_cobrimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lado_pilar_b"
+            android:layout_marginTop="21dp"
+            android:text="@string/cobrimento_main"
+            android:textColor="@color/corPrincipal"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/caixa_cobrimento"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caixa_pilar_b"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="5dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/corPrincipal"
+            app:backgroundTint="@color/corPrincipal" />
+
+        <TextView
+            android:id="@+id/texto_carga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texto_cobrimento"
+            android:layout_marginTop="23dp"
+            android:paddingBottom="5dp"
+            android:text="@string/nk_main"
+            android:textColor="@color/corPrincipal"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/caixa_carga"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caixa_cobrimento"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="0dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/corPrincipal"
+            app:backgroundTint="@color/corPrincipal" />
+
+        <TextView
+            android:id="@+id/texto_fck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texto_carga"
+            android:layout_marginTop="22dp"
+            android:text="@string/fck_main"
+            android:textColor="@color/corPrincipal"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/caixa_fck"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caixa_carga"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="7dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/corPrincipal"
+            app:backgroundTint="@color/corPrincipal" />
+
+        <TextView
+            android:id="@+id/texto_tensao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texto_fck"
+            android:layout_marginTop="22dp"
+            android:text="@string/tensao_solo_main"
+            android:textColor="@color/corPrincipal"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/caixa_tensao"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caixa_fck"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="0dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/corPrincipal"
+            app:backgroundTint="@color/corPrincipal" />
+
+        <TextView
+            android:id="@+id/texto_aco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texto_aco_pilar"
+            android:layout_marginTop="20dp"
+            android:text="@string/tipo_de_aco"
+            android:textColor="@color/corPrincipal"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texto_aco"
+            android:checkedButton="@+id/radio1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/corPrincipal"
+                android:checked="true"
+                android:text="@string/ca_50"
+                android:textColor="@color/corPrincipal"
+                android:textSize="18sp"
+                tools:targetApi="lollipop" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/corPrincipal"
+                android:text="@string/ca_60"
+                android:textColor="@color/corPrincipal"
+                android:textSize="18sp"
+                tools:targetApi="lollipop" />
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/switch_momento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/figura_momento"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:onClick="ativaCaixaMomento"
+            android:text="@string/possui_momento_fletor_aplicado"
+            android:textColor="@color/corPrincipal"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rotulo_momentox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_momento"
+            android:layout_marginTop="20dp"
+            android:text="@string/momento_em_x"
+            android:textColor="@color/corPrincipal"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/caixa_momentox"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_momento"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="0dp"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:textColor="@color/corPrincipal"
+            android:visibility="gone"
+            app:backgroundTint="@color/corPrincipal" />
+
+        <TextView
+            android:id="@+id/rotulo_momentoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caixa_momentox"
+            android:layout_marginTop="20dp"
+            android:text="@string/momento_em_y"
+            android:textColor="@color/corPrincipal"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/caixa_momentoy"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caixa_momentox"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="0dp"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:textColor="@color/corPrincipal"
+            android:visibility="gone"
+            app:backgroundTint="@color/corPrincipal" />
+
+        <Button
+            android:id="@+id/botao_dim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rotulo_momentoy"
+            android:layout_marginTop="10dp"
+            android:onClick="calcule"
+            android:text="@string/dimensionar"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/figura_momento"
+            android:layout_width="272dp"
+            android:layout_height="270dp"
+            android:layout_below="@id/radio_group"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/sapata_dois_figura_removed" />
+
+        <TextView
+            android:id="@+id/texto_phi_pilar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texto_tensao"
+            android:layout_marginTop="25dp"
+            android:text="@string/phi_main"
+            android:textColor="@color/corPrincipal"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/texto_aco_pilar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texto_tensao"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/texto_phi_pilar"
+            android:text="@string/texto_armadura_do_pilar_mm"
+            android:textColor="@color/corPrincipal"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/selecionar_aco_pilar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caixa_tensao"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toEndOf="@id/texto_aco_pilar"
+            android:gravity="center_vertical"
+            android:textAlignment="gravity"
+            android:textColor="@color/corPrincipal"
+            app:backgroundTint="@color/corPrincipal" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
